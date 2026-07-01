@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page for Godspower Ulonna.">
+    <meta name="author" content="Godspower Ulonna">
+    <title>Godspower Ulonna - WDD 231 - Course Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" stroke="#ecf0f1" stroke-width="4" fill="#2c3e50" />
+                <text x="50%" y="50%" text-anchor="middle" stroke="#ecf0f1" stroke-width="2px" dy=".3em">GP</text>
+            </svg>
+            <span>Godspower Ulonna</span>
+        </div>
+        <button id="menu" aria-label="Open Menu"></button>
+    </header>
+    <nav class="navigation">
+        <ul id="animateMenu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="project/">Final</a></li>
+        </ul>
+    </nav>    
+    <main>
+        <h1>Home</h1>
+        <div class="container">
+            <section class="card profile-card">
+                <h2>Course Work</h2>
+                <p>Welcome to my WDD 231 Course Home Page! I am excited to learn more about frontend web development, accessibility, and dynamic data integration.</p>
+                <img src="images/profile.png" alt="Godspower Ulonna Profile">
+            </section>
+            
+            <section class="card location-card">
+                <h2>Location</h2>
+                <p>I currently reside in Salt Lake City, Utah, USA. It's a beautiful place surrounded by mountains and great people.</p>
+                <p>Feel free to connect and share experiences.</p>
+            </section>
+            
+            <section class="card courses-card">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="filter-buttons">
+                    <button id="all">All Courses</button>
+                    <button id="cse">CSE Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                </div>
+                <div id="course-list">
+                    <!-- dynamically populated -->
+                </div>
+                <p id="total-credits">Total Credits: 0</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12C2 16.418 4.865 19.953 8.847 21.196C9.347 21.289 9.531 20.979 9.531 20.718C9.531 20.485 9.522 19.882 9.517 19.076C6.736 19.68 6.148 17.734 6.148 17.734C5.694 16.58 5.04 16.273 5.04 16.273C4.135 15.654 5.109 15.666 5.109 15.666C6.111 15.736 6.637 16.697 6.637 16.697C7.527 18.223 8.966 17.782 9.549 17.522C9.64 16.862 9.907 16.42 10.203 16.168C7.983 15.916 5.65 15.058 5.65 11.478C5.65 10.457 6.015 9.622 6.611 8.971C6.516 8.718 6.194 7.766 6.702 6.475C6.702 6.475 7.487 6.223 9.508 7.591C10.254 7.383 11.06 7.28 11.861 7.276C12.66 7.28 13.465 7.383 14.212 7.591C16.233 6.223 17.017 6.475 17.017 6.475C17.526 7.766 17.204 8.718 17.109 8.971C17.706 9.622 18.069 10.457 18.069 11.478C18.069 15.068 15.733 15.913 13.506 16.16C13.877 16.48 14.208 17.108 14.208 18.071C14.208 19.453 14.195 20.57 14.195 20.718C14.195 20.982 14.378 21.294 14.885 21.195C18.865 19.951 22 16.417 22 12C22 6.477 17.523 2 12 2Z" fill="currentColor"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452H16.906V14.881C16.906 13.553 16.88 11.844 15.062 11.844C13.22 11.844 12.937 13.283 12.937 14.786V20.452H9.397V9H12.795V10.564H12.843C13.316 9.667 14.475 8.728 16.216 8.728C19.825 8.728 20.447 11.1 20.447 14.167V20.452ZM5.337 7.433C4.197 7.433 3.275 6.51 3.275 5.37C3.275 4.23 4.197 3.308 5.337 3.308C6.477 3.308 7.4 4.23 7.4 5.37C7.4 6.51 6.477 7.433 5.337 7.433ZM7.108 20.452H3.567V9H7.108V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="currentColor"/></svg>
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Godspower Ulonna | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
