@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+        border-bottom: none;
+    }
+
+    /* Grid view styling (Default for desktop) */
+    #directory-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    #directory-container.list-view {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #directory-container.list-view .business-card {
+        padding: 1rem;
+    }
+    
+    #directory-container.list-view .business-card img {
+        display: block; /* Show image in desktop list view if desired, or keep hidden. Let's keep it hidden for cleaner look */
+        display: none; 
+    }
+}

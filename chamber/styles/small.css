@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #008751;
+    --secondary-color: #005030;
+    --accent-color: #f39c12;
+    --text-color: #333333;
+    --bg-color: #f4f6f5;
+    --card-bg: #ffffff;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.controls button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.controls button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Base styles for the directory container (Mobile view defaults to list-like cards) */
+#directory-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.business-card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.business-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.business-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.business-card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* List view styling */
+#directory-container.list-view .business-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#directory-container.list-view .business-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+    display: none; /* Hide image in list view for a cleaner look */
+}
+
+#directory-container.list-view .business-card h3 {
+    margin: 0;
+    flex: 1;
+}
+
+#directory-container.list-view .business-card p,
+#directory-container.list-view .business-card a {
+    flex: 1;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

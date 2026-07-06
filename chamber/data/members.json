@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Abuja Tech Hub",
+    "address": "10 Wuse 2, Abuja, Nigeria",
+    "phone": "+234 800 111 2222",
+    "website": "https://abujatechhub.example.com",
+    "image": "Tech.jpg",
+    "membershipLevel": 3,
+    "description": "Leading technology incubation and coworking space in Abuja."
+  },
+  {
+    "name": "Zuma Rock Enterprises",
+    "address": "45 Asokoro District, Abuja, Nigeria",
+    "phone": "+234 800 333 4444",
+    "website": "https://zumarock.example.com",
+    "image": "Rock.jpg",
+    "membershipLevel": 2,
+    "description": "Top-tier logistics and supply chain management."
+  },
+  {
+    "name": "Naija Bites Restaurant",
+    "address": "12 Maitama Crescent, Abuja, Nigeria",
+    "phone": "+234 800 555 6666",
+    "website": "https://naijabites.example.com",
+    "image": "Naija.jpg",
+    "membershipLevel": 1,
+    "description": "Authentic Nigerian cuisine with a modern twist."
+  },
+  {
+    "name": "Aso Rock Consulting",
+    "address": "8 Garki Area 11, Abuja, Nigeria",
+    "phone": "+234 800 777 8888",
+    "website": "https://asoconsult.example.com",
+    "image": "ASO-Rock.webp",
+    "membershipLevel": 3,
+    "description": "Premier business and political consulting firm."
+  },
+  {
+    "name": "Capital City Mall",
+    "address": "90 Central Business District, Abuja, Nigeria",
+    "phone": "+234 800 999 0000",
+    "website": "https://capitalcitymall.example.com",
+    "image": "Capital.jpg",
+    "membershipLevel": 2,
+    "description": "Abuja's largest shopping and entertainment destination."
+  },
+  {
+    "name": "Green Savannah Bank",
+    "address": "5 Broad Street, Abuja, Nigeria",
+    "phone": "+234 800 123 4567",
+    "website": "https://greensavannah.example.com",
+    "image": "Green.jpg",
+    "membershipLevel": 3,
+    "description": "Innovative banking solutions for local businesses."
+  },
+  {
+    "name": "Centenary Designs",
+    "address": "22 Jabi Lake Road, Abuja, Nigeria",
+    "phone": "+234 800 987 6543",
+    "website": "https://centenarydesigns.example.com",
+    "image": "Centenary.png",
+    "membershipLevel": 1,
+    "description": "Creative graphic and web design agency."
+  }
+]
