@@ -35,7 +35,50 @@
     }
     
     #directory-container.list-view .business-card img {
-        display: block; /* Show image in desktop list view if desired, or keep hidden. Let's keep it hidden for cleaner look */
         display: none; 
     }
+
+    /* --- HOME PAGE: Hero --- */
+    .hero {
+        max-height: 520px;
+        border-radius: 12px;
+    }
+
+    .hero img {
+        max-height: 520px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.1rem;
+        max-width: 600px;
+    }
+
+    /* --- HOME PAGE: Home Grid (side-by-side) --- */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    /* --- HOME PAGE: Spotlights (row layout) --- */
+    #spotlights-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 1.5rem;
+    }
+
+    .spotlight-card img {
+        width: 110px;
+        height: 110px;
+    }
 }
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuja Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Abuja Chamber of Commerce. Discover local business opportunities, current events, and join a thriving community in Abuja, Nigeria.">
+    <meta name="author" content="Godspower Ulonna">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Abuja Chamber of Commerce - Home">
+    <meta property="og:description" content="Welcome to the Abuja Chamber of Commerce. Join us and grow your business in Nigeria's capital city.">
+    <meta property="og:image" content="https://godspowergp.github.io/wdd231/chamber/images/hero.png">
+    <meta property="og:url" content="https://godspowergp.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Abuja Chamber of Commerce Logo" width="40" height="40">
+            <span>Abuja Chamber</span>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Hero Banner">
+            <img src="images/hero.png" alt="Abuja city skyline at golden hour showing modern buildings and Aso Rock" width="1200" height="500" loading="eager">
+            <div class="hero-overlay">
+                <h1>Welcome to the Abuja Chamber of Commerce</h1>
+                <p>Connecting businesses, driving growth, and building a stronger Abuja.</p>
+                <a href="join.html" class="cta-btn" id="join-cta">Join the Chamber Today</a>
+            </div>
+        </section>
+
+        <!-- Home Grid: Events + Weather -->
+        <div class="home-grid">
+            <!-- Current Events Section -->
+            <section class="events-section" aria-labelledby="events-heading">
+                <h2 id="events-heading">Current Events</h2>
+
+                <article class="event-card">
+                    <h3>Annual Business Expo 2026</h3>
+                    <time datetime="2026-08-15">August 15, 2026</time>
+                    <p>Join hundreds of businesses at the Abuja International Conference Centre for our flagship annual expo. Network, exhibit, and grow.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>SME Financing Workshop</h3>
+                    <time datetime="2026-07-25">July 25, 2026</time>
+                    <p>A hands-on workshop covering access to credit, grants, and investment opportunities for small and medium enterprises in Abuja.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Networking Breakfast — Q3</h3>
+                    <time datetime="2026-07-30">July 30, 2026</time>
+                    <p>Start your morning with fellow chamber members. Enjoy breakfast and meaningful connections at the Transcorp Hilton Abuja.</p>
+                </article>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather-section" aria-labelledby="weather-heading">
+                <h2 id="weather-heading">Abuja Weather</h2>
+                <div class="weather-current">
+                    <p id="weather-temp" class="weather-temp">--°F</p>
+                    <p id="weather-desc" class="weather-desc">Loading weather...</p>
+                    <p id="weather-humidity" class="weather-humidity"></p>
+                </div>
+                <div class="weather-forecast" aria-label="3-Day Forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-container">
+                        <!-- Forecast cards injected by JS -->
+                        <div class="forecast-day skeleton">
+                            <span class="forecast-label">--</span>
+                            <span class="forecast-temp">--°F</span>
+                        </div>
+                        <div class="forecast-day skeleton">
+                            <span class="forecast-label">--</span>
+                            <span class="forecast-temp">--°F</span>
+                        </div>
+                        <div class="forecast-day skeleton">
+                            <span class="forecast-label">--</span>
+                            <span class="forecast-temp">--°F</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Spotlight Section -->
+        <section class="spotlights-section" aria-labelledby="spotlight-heading">
+            <h2 id="spotlight-heading">Member Spotlights</h2>
+            <p class="spotlight-subtitle">Featuring our Gold &amp; Silver members this week</p>
+            <div id="spotlights-container">
+                <!-- Spotlight cards injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Abuja Chamber of Commerce</p>
+        <p>100 Central Business District, Abuja, Nigeria</p>
+        <p>&copy; <span id="currentyear"></span> | Godspower Ulonna | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
