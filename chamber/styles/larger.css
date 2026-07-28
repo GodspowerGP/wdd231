@@ -80,5 +80,12 @@
         width: 110px;
         height: 110px;
     }
-}
 
+    /* --- JOIN PAGE: Desktop layout --- */
+    .join-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+}

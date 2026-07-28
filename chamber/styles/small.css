@@ -496,3 +496,227 @@ footer p {
     background-color: var(--accent-color);
     color: #fff;
 }
+
+/* ==========================================
+   JOIN PAGE STYLES
+   ========================================== */
+
+.join-main h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.join-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.join-form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: var(--card-bg);
+}
+
+.join-form legend {
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.join-form label.top {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.join-form label.top input,
+.join-form label.top textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+.join-form label.top input:focus,
+.join-form label.top textarea:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: transparent;
+}
+
+.join-form input:required:valid {
+    border-left: 5px solid green;
+}
+.join-form input:required:invalid {
+    border-left: 5px solid red;
+}
+
+.membership-level-selection {
+    margin-bottom: 1rem;
+}
+
+.fieldset-subheader {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.join-form label.sbs {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.join-form .submitBtn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-form .submitBtn:hover {
+    background-color: var(--secondary-color);
+}
+
+.membership-cards h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards-container .card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    animation: fadeInSlideUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.cards-container .card h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+.cards-container .card button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cards-container .card button:hover {
+    background-color: #7a4500;
+}
+
+/* Specific Card Styling */
+.np-card { animation-delay: 0.1s; }
+.bronze-card { animation-delay: 0.3s; }
+.silver-card { animation-delay: 0.5s; }
+.gold-card { animation-delay: 0.7s; }
+
+@keyframes fadeInSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dialog Styles */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: red;
+}
+
+dialog h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+dialog ul {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+dialog ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   THANK YOU PAGE STYLES
+   ========================================== */
+.thankyou-main {
+    text-align: center;
+}
+
+.thankyou-content {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.submitted-info {
+    margin-top: 1.5rem;
+    text-align: left;
+    background-color: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.submitted-info h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
