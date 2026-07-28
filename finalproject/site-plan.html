@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - National Parks Explorer</title>
+    <meta name="description" content="Site plan for the National Parks Explorer individual project.">
+    <meta name="author" content="Your Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Color Scheme Definitions */
+        :root {
+            --primary-color: #2c5e1a; /* Forest Green */
+            --secondary-color: #8c5a2b; /* Earth Brown */
+            --background-color: #f4f6f4; /* Light Nature Green/Gray */
+            --text-color: #333333; /* Dark Charcoal for contrast */
+            --accent-color: #ff9f1c; /* Sunset Orange */
+            
+            --heading-font: 'Outfit', sans-serif;
+            --body-font: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--heading-font);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .color-swatch {
+            flex: 1;
+            min-width: 100px;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .primary { background-color: var(--primary-color); }
+        .secondary { background-color: var(--secondary-color); }
+        .background { background-color: var(--background-color); color: var(--text-color); text-shadow: none; border: 1px solid #ccc;}
+        .text { background-color: var(--text-color); }
+        .accent { background-color: var(--accent-color); color: var(--text-color); text-shadow: none;}
+
+        .wireframe-placeholder {
+            background-color: #eee;
+            border: 2px dashed #aaa;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Site Plan: National Parks Explorer</h1>
+        <p>WDD 231 Individual Project</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Name:</strong> National Parks Explorer</p>
+            <p><strong>Reasoning:</strong> This name directly communicates the purpose of the site. It is clear, recognizable, and encourages users to explore the content. It represents a hub for discovering and learning about various national parks.</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The purpose of this site is to provide an interactive platform for users to discover, explore, and learn about different national parks. It will list park details, provide dynamic information, and allow users to save their favorite parks to a local list for future reference.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> "What are the operating hours and location of Yellowstone National Park?"</li>
+                <li><strong>Scenario 2:</strong> "How can I keep track of the national parks I want to visit next summer?"</li>
+            </ul>
+        </section>
+
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>The color scheme uses earthy and natural tones to reflect the outdoor and nature theme of the website. These colors are used to style this very site plan.</p>
+            
+            <div class="color-palette">
+                <div class="color-swatch primary">
+                    Primary<br>#2c5e1a
+                </div>
+                <div class="color-swatch secondary">
+                    Secondary<br>#8c5a2b
+                </div>
+                <div class="color-swatch background">
+                    Background<br>#f4f6f4
+                </div>
+                <div class="color-swatch text">
+                    Text<br>#333333
+                </div>
+                <div class="color-swatch accent">
+                    Accent<br>#ff9f1c
+                </div>
+            </div>
+            
+            <p><strong>Usage:</strong></p>
+            <ul>
+                <li><strong>Primary Color (Forest Green):</strong> Used for headers, navigation backgrounds, and primary buttons.</li>
+                <li><strong>Secondary Color (Earth Brown):</strong> Used for footers, borders, and secondary text elements.</li>
+                <li><strong>Background Color (Light Nature Green/Gray):</strong> Used as the main body background to keep it light but thematic.</li>
+                <li><strong>Text Color (Dark Charcoal):</strong> Used for all main paragraph text to ensure high contrast and readability.</li>
+                <li><strong>Accent Color (Sunset Orange):</strong> Used sparingly for call-to-action buttons (like "Save to Favorites") and hover states to draw attention.</li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The site uses two fonts from Google Fonts to maintain a clean, modern, yet welcoming look.</p>
+            <ul>
+                <li><strong>Heading Font:</strong> <code>'Outfit', sans-serif</code>. Used for all main headings (h1, h2, h3) and navigation links. It provides a bold, contemporary feel.</li>
+                <li><strong>Body Font:</strong> <code>'Roboto', sans-serif</code>. Used for all paragraph text and lists. It is highly legible and clean.</li>
+            </ul>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Below are the placeholders for the required wireframes. (You will need to replace these placeholders with actual images of your wireframes).</p>
+            
+            <h3>Mobile View (Small Screen)</h3>
+            <div class="wireframe-placeholder">
+                <p><em>[Insert Mobile Wireframe Image Here]</em></p>
+                <p>Features: Hamburger menu, single column layout, stacked cards for parks.</p>
+            </div>
+
+            <h3>Desktop/Tablet View (Large Screen)</h3>
+            <div class="wireframe-placeholder">
+                <p><em>[Insert Desktop Wireframe Image Here]</em></p>
+                <p>Features: Horizontal navigation, multi-column grid layout for park cards.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name | WDD 231 Site Plan</p>
+    </footer>
+
+</body>
+</html>
