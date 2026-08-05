@@ -92,6 +92,9 @@
     /* --- DISCOVER PAGE: Desktop layout --- */
     .discover-layout {
         grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+            "title title"
+            "gallery sidebar";
     }
 
     .gallery {

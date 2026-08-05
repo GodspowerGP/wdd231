@@ -729,9 +729,18 @@ dialog ul li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
+        "title"
         "sidebar"
         "gallery";
     gap: 1.5rem;
+}
+
+h1.discover-title {
+    grid-area: title;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
 }
 
 .sidebar {
