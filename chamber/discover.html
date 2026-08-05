@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuja Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover the best places and attractions in Abuja with the Abuja Chamber of Commerce. Explore demographics and features of our thriving area.">
+    <meta name="author" content="Godspower Ulonna">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Abuja Chamber of Commerce - Discover">
+    <meta property="og:description" content="Discover the vibrant city of Abuja, Nigeria. Find exciting attractions and learn about our community.">
+    <meta property="og:image" content="https://godspowergp.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://godspowergp.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/index.js" type="module"></script>
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Abuja Chamber of Commerce Logo" width="40" height="40">
+            <span>Abuja Chamber</span>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-layout">
+        <!-- Sidebar for Visitor Message and Extras -->
+        <aside class="sidebar">
+            <div id="visitor-message" class="visitor-message">
+                <!-- Message injected by JS -->
+            </div>
+            
+            <div class="demographics">
+                <h2>Abuja Demographics</h2>
+                <p><strong>Population:</strong> ~3.8 Million</p>
+                <p><strong>Language:</strong> English (Official), Hausa, Yoruba, Igbo</p>
+                <p><strong>Climate:</strong> Tropical wet and dry</p>
+                <p><strong>Economy:</strong> Fast-growing commercial and administrative hub.</p>
+            </div>
+        </aside>
+
+        <!-- Gallery Area for the 8 Cards -->
+        <section class="gallery" id="gallery-container">
+            <!-- Cards injected by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Abuja Chamber of Commerce</p>
+        <p>100 Central Business District, Abuja, Nigeria</p>
+        <p>&copy; <span id="currentyear"></span> | Godspower Ulonna | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

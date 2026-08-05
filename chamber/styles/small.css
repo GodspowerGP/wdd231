@@ -720,3 +720,128 @@ dialog ul li {
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 0.5rem;
 }
+
+/* ==========================================
+   DISCOVER PAGE STYLES (Mobile default)
+   ========================================== */
+
+.discover-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "sidebar"
+        "gallery";
+    gap: 1.5rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.visitor-message {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.demographics h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1.5rem;
+}
+
+.gallery-card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Assigning grid areas */
+.gallery-card:nth-child(1) { grid-area: card1; }
+.gallery-card:nth-child(2) { grid-area: card2; }
+.gallery-card:nth-child(3) { grid-area: card3; }
+.gallery-card:nth-child(4) { grid-area: card4; }
+.gallery-card:nth-child(5) { grid-area: card5; }
+.gallery-card:nth-child(6) { grid-area: card6; }
+.gallery-card:nth-child(7) { grid-area: card7; }
+.gallery-card:nth-child(8) { grid-area: card8; }
+
+.gallery-card h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.gallery-card figure {
+    margin: 0;
+    width: 100%;
+}
+
+.gallery-card figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-card address {
+    font-style: normal;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    border-bottom: 1px solid #eee;
+}
+
+.gallery-card p {
+    padding: 0 1rem;
+    flex-grow: 1;
+}
+
+.gallery-card button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.gallery-card button:hover {
+    background-color: var(--accent-color);
+}
+

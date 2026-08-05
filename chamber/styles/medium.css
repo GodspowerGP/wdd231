@@ -1,0 +1,39 @@
+/* ==========================================
+   MEDIUM SCREENS (641px to 1024px)
+   ========================================== */
+@media (min-width: 641px) {
+    /* Discover Page Layout */
+    .discover-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "gallery sidebar";
+        gap: 1.5rem;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .gallery {
+        grid-area: gallery;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        gap: 1rem;
+    }
+
+    /* Hover effect for medium and large screens */
+    .gallery-card figure img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-card:hover figure img {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+}
