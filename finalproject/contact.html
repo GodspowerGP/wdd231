@@ -22,7 +22,7 @@
 <body>
     <header>
         <div class="header-top">
-            <h1>National Parks Explorer</h1>
+            <span class="site-title">National Parks Explorer</span>
             <button id="menu" aria-label="Toggle Navigation Menu"></button>
         </div>
         <nav>
@@ -36,32 +36,32 @@
 
     <main>
         <div class="intro">
-            <h2>Get in Touch</h2>
+            <h1>Get in Touch</h1>
             <p>We'd love to hear from you. Please fill out the form below.</p>
         </div>
         
         <form action="thankyou.html" method="get" class="contact-form">
-            <div class="form-group">
+            <div class="input-container">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" required>
             </div>
             
-            <div class="form-group">
+            <div class="input-container">
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname" required>
             </div>
             
-            <div class="form-group">
+            <div class="input-container">
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required title="Please enter a valid email address.">
             </div>
 
-            <div class="form-group">
+            <div class="input-container">
                 <label for="message">Message/Feedback:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+            <button type="submit" class="action-btn primary-action" style="width: 100%;">Submit Message</button>
         </form>
     </main>
 

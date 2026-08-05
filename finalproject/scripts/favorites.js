@@ -59,7 +59,7 @@ function displayFavorites(parks) {
                 <p><strong>Established:</strong> ${park.established}</p>
             </div>
             <div class="card-actions">
-                <button class="btn btn-secondary remove-btn" data-id="${park.id}">Remove from Favorites</button>
+                <button class="action-btn secondary-action remove-btn" data-id="${park.id}">Remove from Favorites</button>
             </div>
         `;
         

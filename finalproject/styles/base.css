@@ -223,7 +223,7 @@ main {
     z-index: 1;
 }
 
-.btn {
+.action-btn {
     flex: 1;
     padding: 0.6rem 1rem;
     border: none;
@@ -239,30 +239,30 @@ main {
     letter-spacing: 0.5px;
 }
 
-.btn-primary {
+.primary-action {
     background: linear-gradient(135deg, var(--primary-color), #3a7a23);
     color: white;
     box-shadow: 0 4px 10px rgba(44, 94, 26, 0.3);
 }
 
-.btn-accent {
+.accent-action {
     background: linear-gradient(135deg, var(--accent-color), #ff8800);
     color: white;
     box-shadow: 0 4px 10px rgba(255, 159, 28, 0.3);
 }
 
-.btn-secondary {
+.secondary-action {
     background: linear-gradient(135deg, var(--secondary-color), #a46d36);
     color: white;
     box-shadow: 0 4px 10px rgba(140, 90, 43, 0.3);
 }
 
-.btn:hover {
+.action-btn:hover {
     transform: translateY(-2px);
     filter: brightness(1.1);
 }
 
-.btn:active {
+.action-btn:active {
     transform: translateY(1px);
 }
 
@@ -303,18 +303,18 @@ dialog::backdrop {
     border-top: 5px solid var(--accent-color);
 }
 
-.form-group {
+.input-container {
     margin-bottom: 1.8rem;
 }
 
-.form-group label {
+.input-container label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 700;
     color: var(--primary-color);
 }
 
-.form-group input, .form-group textarea {
+.input-container input, .input-container textarea {
     width: 100%;
     padding: 1rem;
     border: 2px solid #e1e5e1;
@@ -325,7 +325,7 @@ dialog::backdrop {
     background-color: #fcfdfc;
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.input-container input:focus, .input-container textarea:focus {
     outline: none;
     border-color: var(--accent-color);
     box-shadow: 0 0 0 4px rgba(255, 159, 28, 0.1);

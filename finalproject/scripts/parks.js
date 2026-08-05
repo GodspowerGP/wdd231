@@ -48,8 +48,8 @@ function displayParks(parks) {
                 <p><strong>Location:</strong> ${park.location}</p>
             </div>
             <div class="card-actions">
-                <button class="btn btn-primary info-btn" data-id="${park.id}">More Info</button>
-                <button class="btn btn-accent save-btn" data-id="${park.id}">Save to Favorites</button>
+                <button class="action-btn primary-action info-btn" data-id="${park.id}">More Info</button>
+                <button class="action-btn accent-action save-btn" data-id="${park.id}">Save to Favorites</button>
             </div>
         `;
         
@@ -63,7 +63,7 @@ function displayParks(parks) {
         // Set initial button state based on Local Storage
         if (getFavorites().includes(park.id)) {
             saveBtn.textContent = 'Saved!';
-            saveBtn.classList.replace('btn-accent', 'btn-secondary');
+            saveBtn.classList.replace('accent-action', 'secondary-action');
         }
 
         parksContainer.appendChild(card);
@@ -114,12 +114,12 @@ function toggleFavorite(id, button) {
         // Remove it (using filter)
         favorites = favorites.filter(favId => favId !== id);
         button.textContent = 'Save to Favorites';
-        button.classList.replace('btn-secondary', 'btn-accent');
+        button.classList.replace('secondary-action', 'accent-action');
     } else {
         // Add it
         favorites.push(id);
         button.textContent = 'Saved!';
-        button.classList.replace('btn-accent', 'btn-secondary');
+        button.classList.replace('accent-action', 'secondary-action');
     }
     
     localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
