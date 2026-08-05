@@ -1,0 +1,137 @@
+[
+    {
+        "id": "1",
+        "name": "Yellowstone National Park",
+        "location": "Wyoming, Montana, Idaho",
+        "established": "March 1, 1872",
+        "area": "2,219,791 acres",
+        "description": "Widely held to be the first national park in the world, known for its wildlife and geothermal features.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=1"
+    },
+    {
+        "id": "2",
+        "name": "Yosemite National Park",
+        "location": "California",
+        "established": "October 1, 1890",
+        "area": "761,266 acres",
+        "description": "Internationally recognized for its granite cliffs, waterfalls, clear streams, giant sequoia groves, and biological diversity.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=2"
+    },
+    {
+        "id": "3",
+        "name": "Zion National Park",
+        "location": "Utah",
+        "established": "November 19, 1919",
+        "area": "146,597 acres",
+        "description": "Known for Zion Canyon, a deep and narrow canyon with stunning reddish and tan-colored Navajo Sandstone.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=3"
+    },
+    {
+        "id": "4",
+        "name": "Grand Canyon National Park",
+        "location": "Arizona",
+        "established": "February 26, 1919",
+        "area": "1,217,262 acres",
+        "description": "Encompasses the Grand Canyon, a massive gorge of the Colorado River, widely considered one of the Wonders of the World.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=4"
+    },
+    {
+        "id": "5",
+        "name": "Glacier National Park",
+        "location": "Montana",
+        "established": "May 11, 1910",
+        "area": "1,013,322 acres",
+        "description": "Features parts of two mountain ranges, over 130 named lakes, and hundreds of species of animals and plants.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=5"
+    },
+    {
+        "id": "6",
+        "name": "Acadia National Park",
+        "location": "Maine",
+        "established": "February 26, 1919",
+        "area": "49,075 acres",
+        "description": "Protects the natural beauty of the highest rocky headlands along the Atlantic coastline of the United States.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=6"
+    },
+    {
+        "id": "7",
+        "name": "Rocky Mountain National Park",
+        "location": "Colorado",
+        "established": "January 26, 1915",
+        "area": "265,461 acres",
+        "description": "Features majestic mountain views, mountain lakes, a variety of wildlife, and varied climates and environments.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=7"
+    },
+    {
+        "id": "8",
+        "name": "Great Smoky Mountains National Park",
+        "location": "Tennessee, North Carolina",
+        "established": "June 15, 1934",
+        "area": "522,419 acres",
+        "description": "The most visited national park in the United States, renowned for its diversity of plant and animal life.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=8"
+    },
+    {
+        "id": "9",
+        "name": "Olympic National Park",
+        "location": "Washington",
+        "established": "June 29, 1938",
+        "area": "922,650 acres",
+        "description": "Known for the diversity of its ecosystems, ranging from the rugged Pacific coastline to temperate rainforests.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=9"
+    },
+    {
+        "id": "10",
+        "name": "Denali National Park",
+        "location": "Alaska",
+        "established": "February 26, 1917",
+        "area": "4,740,911 acres",
+        "description": "Centered on Denali, the highest mountain in North America, featuring a mix of forest, tundra, and glaciers.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=10"
+    },
+    {
+        "id": "11",
+        "name": "Joshua Tree National Park",
+        "location": "California",
+        "established": "October 31, 1994",
+        "area": "790,636 acres",
+        "description": "Characterized by rugged rock formations and stark desert landscapes, named for the region's twisted, bristled Joshua trees.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=11"
+    },
+    {
+        "id": "12",
+        "name": "Arches National Park",
+        "location": "Utah",
+        "established": "November 12, 1971",
+        "area": "76,518 acres",
+        "description": "Contains the highest density of natural arches in the world, featuring more than 2,000 natural sandstone arches.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=12"
+    },
+    {
+        "id": "13",
+        "name": "Bryce Canyon National Park",
+        "location": "Utah",
+        "established": "February 25, 1928",
+        "area": "35,835 acres",
+        "description": "Despite its name, it is not a canyon but a collection of giant natural amphitheaters along the eastern side of the Paunsaugunt Plateau.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=13"
+    },
+    {
+        "id": "14",
+        "name": "Grand Teton National Park",
+        "location": "Wyoming",
+        "established": "February 26, 1929",
+        "area": "310,000 acres",
+        "description": "Encompasses the major peaks of the 40-mile-long Teton Range as well as most of the northern sections of Jackson Hole.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=14"
+    },
+    {
+        "id": "15",
+        "name": "Sequoia National Park",
+        "location": "California",
+        "established": "September 25, 1890",
+        "area": "404,064 acres",
+        "description": "Famous for its giant sequoia trees, including the General Sherman tree, the largest tree on Earth by volume.",
+        "imageUrl": "https://picsum.photos/400/300.webp?random=15"
+    }
+]

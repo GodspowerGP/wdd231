@@ -1,0 +1,50 @@
+/* ==========================================
+   Desktop and Tablet Styles (Larger screens)
+   ========================================== */
+@media (min-width: 768px) {
+    /* --- Header & Nav --- */
+    header {
+        padding: 0 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-top {
+        padding: 1.5rem 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        background: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    nav a {
+        padding: 1.2rem 2rem;
+        border-bottom: none;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+    }
+    
+    nav a:hover, nav a.active {
+        padding-left: 2rem; /* Reset mobile padding shift */
+        transform: translateY(-2px);
+    }
+
+    /* --- Park Cards Grid (Multi-column) --- */
+    #parks-container, .parks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}

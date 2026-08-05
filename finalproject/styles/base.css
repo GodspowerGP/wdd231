@@ -1,0 +1,357 @@
+/* ==========================================
+   Base Styles and Variables (Mobile First)
+   ========================================== */
+:root {
+    --primary-color: #2c5e1a;
+    --secondary-color: #8c5a2b;
+    --background-color: #f4f6f4;
+    --text-color: #2c3e50;
+    --accent-color: #ff9f1c;
+    
+    --heading-font: 'Outfit', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    background-image: radial-gradient(circle at top right, rgba(44, 94, 26, 0.05), transparent 40%),
+                      radial-gradient(circle at bottom left, rgba(255, 159, 28, 0.05), transparent 40%);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* --- Header & Navigation (Glassmorphism) --- */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #1e4511);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+nav {
+    background: transparent;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.open {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+    background: rgba(30, 69, 17, 0.95);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-weight: 600;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--accent-color);
+    padding-left: 1.5rem;
+}
+
+/* --- Main Content --- */
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://picsum.photos/1200/600.webp?random=100') center/cover;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Park Cards Grid --- */
+.grid-container, #parks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.park-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.park-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.park-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.park-card:hover img {
+    transform: scale(1.05);
+}
+
+.park-card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.park-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.park-card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card-actions {
+    padding: 1rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+    background-color: #fbfbfb;
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: var(--body-font);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #3a7a23);
+    color: white;
+    box-shadow: 0 4px 10px rgba(44, 94, 26, 0.3);
+}
+
+.btn-accent {
+    background: linear-gradient(135deg, var(--accent-color), #ff8800);
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 159, 28, 0.3);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--secondary-color), #a46d36);
+    color: white;
+    box-shadow: 0 4px 10px rgba(140, 90, 43, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+/* --- Modal Dialog --- */
+dialog {
+    border: none;
+    border-radius: 16px;
+    padding: 2.5rem;
+    max-width: 550px;
+    width: 90%;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    background: white;
+    animation: modalFadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.9) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.close-modal {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+/* --- Form Styles --- */
+.contact-form {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 650px;
+    margin: 0 auto 3rem auto;
+    border-top: 5px solid var(--accent-color);
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e1e5e1;
+    border-radius: 8px;
+    font-family: var(--body-font);
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fcfdfc;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(255, 159, 28, 0.1);
+}
+
+/* --- Footer --- */
+footer {
+    background: linear-gradient(to top, var(--secondary-color), #7a4f26);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    opacity: 0.9;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffd199;
+}

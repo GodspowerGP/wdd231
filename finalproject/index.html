@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks Explorer - Home</title>
+    <meta name="description" content="Discover and explore the majestic national parks of the United States. Find your next adventure here.">
+    <meta name="author" content="Godspower Ulonna">
+    
+    <meta property="og:title" content="National Parks Explorer">
+    <meta property="og:description" content="Discover majestic national parks and save your favorites for future adventures.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/parks.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>National Parks Explorer</h1>
+            <button id="menu" aria-label="Toggle Navigation Menu"></button>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="index.html" class="active">Discover</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Modern Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explore the Great Outdoors</h2>
+                <p>Discover the breathtaking beauty of our national parks. Browse the collection below and save your favorites for your next adventure!</p>
+            </div>
+        </section>
+        
+        <div id="parks-container" class="grid-container">
+            <!-- Park cards injected here by JS -->
+        </div>
+    </main>
+
+    <!-- Modal Dialog -->
+    <dialog id="park-modal">
+        <h2 id="modal-title">Park Name</h2>
+        <p><strong>Location:</strong> <span id="modal-location"></span></p>
+        <p><strong>Established:</strong> <span id="modal-established"></span></p>
+        <p><strong>Area:</strong> <span id="modal-area"></span></p>
+        <p id="modal-description">Description goes here.</p>
+        <button class="btn btn-secondary close-modal" id="close-modal-btn">Close</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Godspower Ulonna | WDD 231 Final Project</p>
+        <p id="lastModified"></p>
+        <p><a href="site-plan.html">Site Plan</a> | <a href="#">Video Demo</a> | <a href="#">Attributions</a></p>
+    </footer>
+</body>
+</html>
